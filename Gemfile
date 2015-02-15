@@ -80,4 +80,5 @@ group :test do
   gem 'capybara'
   gem 'database_rewinder'
   gem 'launchy'
+  gem 'shoulda-matchers', require: false
 end
