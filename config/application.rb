@@ -17,16 +17,16 @@ Bundler.require(*Rails.groups)
 module Trindo
   class Application < Rails::Application
     config.generators do |g|
-  g.template_engine :haml
-  g.test_framework :rspec,
-    fixtures:         true,
-    view_specs:       false,
-    routing_specs:    false,
-    request_specs:    false,
-    controller_specs: true,
-    helper_specs:     true
-  g.fixture_replacement :factory_girl, dir: "spec/factories"
-end
+      g.template_engine :haml
+      g.test_framework :rspec,
+        fixtures:         true,
+        view_specs:       false,
+        routing_specs:    false,
+        request_specs:    false,
+        controller_specs: true,
+        helper_specs:     true
+      g.fixture_replacement :factory_girl, dir: "spec/factories"
+    end
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
